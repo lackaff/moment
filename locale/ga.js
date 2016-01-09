@@ -1,6 +1,6 @@
 //! moment.js locale configuration
-//! locale : great britain scottish gealic (gd)
-//! author : Jon Ashdown : https://github.com/jonashdown
+//! locale : ireland irish (ga)
+//! author : Derek Lackaff (+ help :): https://github.com/jonashdown
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'
@@ -11,16 +11,16 @@
 
 
     var months = [
-        'Am Faoilleach', 'An Gearran', 'Am Màrt', 'An Giblean', 'An Cèitean', 'An t-Ògmhios', 'An t-Iuchar', 'An Lùnastal', 'An t-Sultain', 'An Dàmhair', 'An t-Samhain', 'An Dùbhlachd'
+        'Éanair', 'Feabhra', 'Márta', 'Aibreán', 'Bealtaine', 'Meitheamh', 'Iúil', 'Lúnasa', 'Meán Fómhar', 'Deireadh Fómhar', 'Samhain', 'Nollaig'
     ];
 
-    var monthsShort = ['Faoi', 'Gear', 'Màrt', 'Gibl', 'Cèit', 'Ògmh', 'Iuch', 'Lùn', 'Sult', 'Dàmh', 'Samh', 'Dùbh'];
+    var monthsShort = ['Éan', 'Fea', 'Már', 'Aib', 'Beal', 'Meith', 'Iúil', 'Lún', 'M Fó', 'D Fó', 'Samh', 'Nol'];
 
-    var weekdays = ['Didòmhnaich', 'Diluain', 'Dimàirt', 'Diciadain', 'Diardaoin', 'Dihaoine', 'Disathairne'];
+    var weekdays = ['Dé Domhnaigh', 'Dé Luain', 'Dé Máirt', 'Dé Céadaoin', 'Déardaoin', 'Dé hAoine', 'Dé Sathairn'];
 
-    var weekdaysShort = ['Did', 'Dil', 'Dim', 'Dic', 'Dia', 'Dih', 'Dis'];
+    var weekdaysShort = ['Domh', 'Luan', 'Máirt', 'Céad', 'Déar', 'Aoine', 'Sath'];
 
-    var weekdaysMin = ['Dò', 'Lu', 'Mà', 'Ci', 'Ar', 'Ha', 'Sa'];
+    var weekdaysMin = ['Do', 'Lu', 'Mà', 'Cé', 'Dé', 'Ao', 'Sa'];
 
     var gd = moment.defineLocale('gd', {
         months : months,
@@ -38,31 +38,31 @@
             LLLL : 'dddd, D MMMM YYYY HH:mm'
         },
         calendar : {
-            sameDay : '[An-diugh aig] LT',
-            nextDay : '[A-màireach aig] LT',
-            nextWeek : 'dddd [aig] LT',
-            lastDay : '[An-dè aig] LT',
-            lastWeek : 'dddd [seo chaidh] [aig] LT',
+            sameDay : '[Inniu ag a] LT',
+            nextDay : '[Amárach ag a] LT',
+            nextWeek : 'dddd [ag] LT',
+            lastDay : '[Inné ag] LT',
+            lastWeek : 'dddd [seo caite] [ag] LT',
             sameElse : 'L'
         },
         relativeTime : {
-            future : 'ann an %s',
-            past : 'bho chionn %s',
-            s : 'beagan diogan',
-            m : 'mionaid',
-            mm : '%d mionaidean',
+            future : 'i gceann %s',
+            past : 'o shoin %s',
+            s : 'cúpla soicind',
+            m : 'nóiméad',
+            mm : '%d nóiméad',
             h : 'uair',
-            hh : '%d uairean',
-            d : 'latha',
-            dd : '%d latha',
-            M : 'mìos',
-            MM : '%d mìosan',
-            y : 'bliadhna',
-            yy : '%d bliadhna'
+            hh : '%d uair',
+            d : 'lá',
+            dd : '%d lá',
+            M : 'mí',
+            MM : '%d mhí',
+            y : 'bliana',
+            yy : '%d bliain'
         },
         ordinalParse : /\d{1,2}(d|na|mh)/,
         ordinal : function (number) {
-            var output = number === 1 ? 'd' : number % 10 === 2 ? 'na' : 'mh';
+            var output = number === 1 ? 'ú' : number % 10 === 2 ? 'ú' : 'ú';
             return number + output;
         },
         week : {
