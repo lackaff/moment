@@ -47,7 +47,7 @@
         },
         relativeTime : {
             future : 'i gceann %s',
-            past : 'o shoin %s',
+            past : '%s o shoin',
             s : 'cúpla soicind',
             m : 'nóiméad',
             mm : '%d nóiméad',
