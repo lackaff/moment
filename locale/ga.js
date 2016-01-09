@@ -1,6 +1,6 @@
 //! moment.js locale configuration
 //! locale : ireland irish (ga)
-//! author : Derek Lackaff (+ help :): https://github.com/jonashdown
+//! author :  Fáinche Ní Fhoighil + Derek Lackaff: https://github.com/jonashdown
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'
